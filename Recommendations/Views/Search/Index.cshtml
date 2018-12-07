@@ -1,0 +1,72 @@
+﻿@model  Recommendations.Models.Search
+@using NICE.Search.Common.Models
+@using NICE.Search.Common.Urls
+@{
+    ViewBag.Title = "Index";
+}
+<style>
+    .results{
+        padding:10px;
+        border-bottom: 1px solid silver;
+    }
+    .active{
+        font-weight:bold;
+    }
+</style>
+@foreach (Document result in Model.Results.Documents)
+{
+<div class="results">
+    <h4><a href="@result.Url">@Html.Raw(@result.Title)</a></h4>
+    <p>@Html.Raw(@result.Teaser)</p>
+</div>
+}
+
+@if (Model.Results.Documents.Any() && Model.Results.PagerLinks != null)
+{
+    <div class="pager pager-centered">
+        <ul>
+            @if (Model.Results.PagerLinks.Previous != null)
+            {
+                <li class="previous"><a href="@Model.Results.PagerLinks.Previous" data-track="pagination" rel="previous">Prev</a></li>
+            }
+            @if (Model.Results.PagerLinks.First != null)
+            {
+                <li><a href="@Model.Results.PagerLinks.First" data-track="pagination" rel="1">1</a></li>
+                <li class="disabled"><span>...</span></li>
+            }
+            @foreach (var page in Model.Results.PagerLinks.Pages)
+            {
+                <li class="@((page.IsCurrent) ? "active" : null)"><a href="@page.url" data-track="pagination" rel="@page.Title">@page.Title</a></li>
+            }
+            @if (Model.Results.PagerLinks.Next != null)
+            {
+                <li class="next"><a href="@Model.Results.PagerLinks.Next" data-track="pagination" rel="next">Next</a></li>
+            }
+            <li>
+                <form action="@Model.SearchUrl.Mod(u => u.ps = null).Mod(u => u.pa = null)" method="GET" id="confidential" class="form-wrapping auto-update">
+                    @Model.SearchUrl.Mod(u => u.ps = null).Mod(u => u.pa = null).Hiddens()
+                    <br/>
+                    <select data-submit="auto" name="ps" class="input-medium" id="PageSize">
+                        <option @if (Model.SearchUrl.ps == 10 || Model.SearchUrl.ps == null)
+        {
+                                    <text>selected</text>
+        } value="10">10 per page</option>
+<option @if (Model.SearchUrl.ps == 50)
+        {
+                                    <text>selected</text>
+        } value="50">50 per page</option>
+<option @if (Model.SearchUrl.ps == 100)
+        {
+                                    <text>selected</text>
+        } value="100">100 per page</option>
+<option @if (Model.SearchUrl.ps == 250)
+        {
+                                    <text>selected</text>
+        } value="250">250 per page</option>
+                    </select>
+                    <button type="submit" class="btn-primary"></button>
+                </form>
+            </li>
+        </ul>
+    </div>
+}
