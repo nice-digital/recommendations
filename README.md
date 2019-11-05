@@ -1,6 +1,6 @@
-# Project name
+Recommendations
   
- > High level overview
+ Recommendations is an experimental project to allow users to search for individual NICE recommendations. 
  
 <details>
 <summary><strong>Table of contents</strong></summary>
@@ -10,9 +10,9 @@
   
 ## What is it?
 Overview
-- What is the thing?
-- What does it do?
--  Who is the target audience?
+- Recommendations is an experimental project to allow users to search and retrieve the content of individual NICE recommendations, independently of their parent guidance. 
+- The project separates NICE recommendations and ingests them as separate entities, so that they can also be searched and retriecved separately.
+- The project is potentially of interest to anyone who wants to be able to search NICE content at a granular level to find recommendations on similar subjects from different guidance products.
   
 ## Stack
 - What is the systems architecture
