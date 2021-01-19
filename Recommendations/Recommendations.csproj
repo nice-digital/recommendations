@@ -46,7 +46,8 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Elasticsearch.Net, Version=6.0.0.0, Culture=neutral, PublicKeyToken=96c599bbe3e70f5d, processorArchitecture=MSIL">
-      <HintPath>..\packages\Elasticsearch.Net.6.1.0\lib\net46\Elasticsearch.Net.dll</HintPath>
+      <HintPath>..\packages\NICE.Search.2.1.1026\lib\net45\Elasticsearch.Net.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Jayrock, Version=0.9.16530.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\jayrock.0.9.16530\lib\net40\Jayrock.dll</HintPath>
@@ -56,16 +57,24 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Nest, Version=6.0.0.0, Culture=neutral, PublicKeyToken=96c599bbe3e70f5d, processorArchitecture=MSIL">
-      <HintPath>..\packages\NEST.6.1.0\lib\net46\Nest.dll</HintPath>
+      <HintPath>..\packages\NICE.Search.2.1.1026\lib\net45\Nest.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="NICE.Search, Version=2.0.47.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NICE.Search.2.1.318-SRCH-343\lib\net45\NICE.Search.dll</HintPath>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\NICE.Search.2.1.1026\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="NICE.Search.Common, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NICE.Search.2.1.318-SRCH-343\lib\net45\NICE.Search.Common.dll</HintPath>
+    <Reference Include="NICE.Search, Version=2.1.1026.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NICE.Search.2.1.1026\lib\net45\NICE.Search.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="NICE.Search.Elasticsearch, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NICE.Search.2.1.318-SRCH-343\lib\net45\NICE.Search.Elasticsearch.dll</HintPath>
+    <Reference Include="NICE.Search.Common, Version=2.1.1026.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NICE.Search.2.1.1026\lib\net45\NICE.Search.Common.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="NICE.Search.Elasticsearch, Version=2.1.1026.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NICE.Search.2.1.1026\lib\net45\NICE.Search.Elasticsearch.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -119,9 +128,6 @@
     <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.4\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="WebGrease">
       <Private>True</Private>
