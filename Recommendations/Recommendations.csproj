@@ -46,7 +46,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Elasticsearch.Net, Version=6.0.0.0, Culture=neutral, PublicKeyToken=96c599bbe3e70f5d, processorArchitecture=MSIL">
-      <HintPath>..\packages\NICE.Search.2.1.1095-BNF-1078-Clean-Up-BN\lib\net45\Elasticsearch.Net.dll</HintPath>
+      <HintPath>..\packages\NICE.Search.2.1.1098\lib\net45\Elasticsearch.Net.dll</HintPath>
     </Reference>
     <Reference Include="Jayrock, Version=0.9.16530.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\jayrock.0.9.16530\lib\net40\Jayrock.dll</HintPath>
@@ -56,19 +56,19 @@
     </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Nest, Version=6.0.0.0, Culture=neutral, PublicKeyToken=96c599bbe3e70f5d, processorArchitecture=MSIL">
-      <HintPath>..\packages\NICE.Search.2.1.1095-BNF-1078-Clean-Up-BN\lib\net45\Nest.dll</HintPath>
+      <HintPath>..\packages\NICE.Search.2.1.1098\lib\net45\Nest.dll</HintPath>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\NICE.Search.2.1.1095-BNF-1078-Clean-Up-BN\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>..\packages\NICE.Search.2.1.1098\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
-    <Reference Include="NICE.Search, Version=2.1.1095.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NICE.Search.2.1.1095-BNF-1078-Clean-Up-BN\lib\net45\NICE.Search.dll</HintPath>
+    <Reference Include="NICE.Search, Version=2.1.1098.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NICE.Search.2.1.1098\lib\net45\NICE.Search.dll</HintPath>
     </Reference>
-    <Reference Include="NICE.Search.Common, Version=2.1.1095.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NICE.Search.2.1.1095-BNF-1078-Clean-Up-BN\lib\net45\NICE.Search.Common.dll</HintPath>
+    <Reference Include="NICE.Search.Common, Version=2.1.1098.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NICE.Search.2.1.1098\lib\net45\NICE.Search.Common.dll</HintPath>
     </Reference>
-    <Reference Include="NICE.Search.Elasticsearch, Version=2.1.1095.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\NICE.Search.2.1.1095-BNF-1078-Clean-Up-BN\lib\net45\NICE.Search.Elasticsearch.dll</HintPath>
+    <Reference Include="NICE.Search.Elasticsearch, Version=2.1.1098.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NICE.Search.2.1.1098\lib\net45\NICE.Search.Elasticsearch.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
