@@ -1,5 +1,4 @@
 ﻿using NICE.Search.Common.Urls;
-using NICE.Search.Providers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
